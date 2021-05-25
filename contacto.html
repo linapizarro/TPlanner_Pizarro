@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./estilos/style.css" />
+    <script
+      src="https://kit.fontawesome.com/c441bf4713.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="body">
+    <header class="header">
+      <div class="header__titulo">
+        <h1>Planificador Docente</h1>
+      </div>
+      <nav class="header__navegacion">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="funcionalidades.html">Funcionalidades</a></li>
+          <li><a href="ingreso.html">Ingresá</a></li>
+          <li><a href="ayuda.html">Ayuda</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="contenedor">
+        <h1 class="titulo">Contactate</h1>
+        <div class="contacto__recuadro">
+          <div class="contacto__formulario">
+            <h3>Escribinos tu consulta</h3>
+            <form action="#">
+              <p>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" />
+              </p>
+              <p>
+                <label for="e_mail">E-mail</label>
+                <input type="email" name="e_mail" />
+              </p>
+              <p>
+                <label for="tel">Teléfono</label>
+                <input type="tel" name="tel" />
+              </p>
+              <p class="block">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" rows="4"></textarea>
+              </p>
+              <!-- Boton enviar y boton Retur -->
+              <p class="block">
+                <button type="submit">Enviar</button>
+              </p>
+            </form>
+          </div>
+          <div class="contacto__info">
+            <h4>Más información</h4>
+            <ul>
+              <li><i class="fas fa-map-marker-alt"></i> Nombre de la calle</li>
+              <li><i class="fab fa-whatsapp"></i> 111 1111 1111</li>
+              <li><i class="fas fa-at"></i> contacto@website.com</li>
+            </ul>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+              quos id nulla mollitia odio, tenetur consectetur assumenda. Culpa,
+              minima libero.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>logo y contactos. Creado por LP - 2021</p>
+    </footer>
+  </body>
+</html>

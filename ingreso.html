@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingreso</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./estilos/style.css" />
+  </head>
+
+  <body class="body">
+    <header class="header">
+      <div class="header__titulo">
+        <h1>Planificador Docente</h1>
+      </div>
+      <nav class="header__navegacion">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="funcionalidades.html">Funcionalidades</a></li>
+          <li><a href="ingreso.html">Ingresá</a></li>
+          <li><a href="ayuda.html">Ayuda</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="contenedor">
+        <h1 class="titulo">Ingresá</h1>
+        <div class="ingreso__recuadro">
+          <p>
+            <label for="usario"></label>
+            <input type="text" name="usario" placeholder="Nombre de usuario" />
+          </p>
+          <p>
+            <label for="pass"></label>
+            <input type="password" name="pass" placeholder="Contraseña" />
+          </p>
+          <!-- Casilla de verificación recordame -->
+          <div class="casilla">
+            <input type="checkbox" name="acepta" value="1" /> Recordarme
+          </div>
+          <!-- Boton enviar -->
+
+          <button type="submit">Ingresar</button>
+        </div>
+
+        <!--Recupero de clave/usuario  -->
+
+        <div class="ingreso__recupero">
+          <p>Olvidaste tus datos de ingreso?</p>
+          <a href="#">Olvidé mi clave</a>
+        </div>
+        <div class="ingreso__crearcuenta">
+          <h4>¿No tenés cuenta?</h4>
+          <a href="">Crea una cuenta</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>logo y contactos. Creado por LP - 2021</p>
+    </footer>
+  </body>
+</html>
