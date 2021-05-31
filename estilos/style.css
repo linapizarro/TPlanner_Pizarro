@@ -5,8 +5,15 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62, 5%;
+.logo {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+/* html {
   font-family: "Poppins", sans-serif;
 }
 
@@ -28,11 +35,12 @@ footer {
   font-size: 0.7rem;
   display: flex;
   justify-content: center;
-}
+} */
 
 /* ESTILOS A TRAVES DE CLASES & ID ---- DE ACA PARA ABAJO */
 /* ESTILOS DEL HEADER */
-.header__titulo {
+
+/* .header__titulo {
   color: #0f6;
   font-size: 1.3rem;
   font-weight: bold;
@@ -68,7 +76,7 @@ footer {
   transform: translate(-5px, -2px);
   color: #e2add7;
   transition: background-color 0.5s ease-out;
-}
+} */
 
 /* FINAL DEL HEADER */
 
@@ -144,20 +152,6 @@ footer {
 .cardgrid__info {
   display: flex;
 }
-
-/* ESTA BIEN????? */
-@media only screen and (max-width: 1000px) {
-  .section2 {
-    grid-column-end: span 6;
-  }
-}
-
-@media only screen and (min-width: 700px) {
-  .section2 {
-    grid-column-end: span 12;
-  }
-}
-
 /* ESTILOS DE CONTACTO-HTML */
 .contenedor {
   max-width: 1170px;
@@ -369,7 +363,7 @@ footer {
 }
 
 /* PANTALLAS GRANDES PARA CONTACTO e INGRESO*/
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   /* .ingreso__recuadro, */
   .contacto__recuadro {
     display: grid;
@@ -383,3 +377,22 @@ footer {
     text-align: left;
   }
 }
+/* ESTA BIEN????? */
+/* @media only screen and (max-width: 1000px) {
+  .section2 {
+    grid-column-end: span 6;
+  }
+} */
+
+/* @media only screen and (min-width: 700px) {
+  .section2 {
+    grid-column-end: span 12;
+  }
+} */
+
+/* PROBANDO CON PANTALLAS HASTA 520PX, DEBERIA SER MAS DE 576. HACER PARA CELU Y DESPUES MINWITDTH 576 */
+/* @media (max-width: 520px) {
+  header {
+    font-size: 62.5%;
+  }
+} */
