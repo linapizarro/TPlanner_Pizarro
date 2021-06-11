@@ -1,0 +1,95 @@
+$fuente-normal: 1em;
+$color-bkg-primario: #c9bfbfdc; //fondo de form primario
+$color-bkg-secundario: rgb(180, 160, 160); // fondo de form secundario
+
+//otros colores
+$first-color: #007bdf;
+$first-color-alt: #006dc6;
+$second-color: #00cbff;
+$second-color-alt: #00bff0;
+$third-color: #ff3c32;
+$third-color-alt: #ff2419;
+$accent-color: #fba905;
+$accent-color-alt: #f1a000;
+$dark-color: #282d31;
+$dark-color-alt: #141618;
+$border-color: #53575a;
+$text-color: #282d31;
+$text-color-alt: #53575a;
+$text-color-alt2: #808080;
+$body-bkg: #fcfcfc;
+
+//*********estilos del header
+
+.container-fluid {
+  .logo {
+    height: $fuente-normal * 4;
+    width: $fuente-normal * 4;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+}
+
+//****************estilo de carrousel
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: $dark-color;
+  opacity: 0.3;
+}
+.carousel-caption {
+  bottom: 30px;
+  h5 {
+    font-size: $fuente-normal * 2;
+  }
+  p {
+    font-size: $fuente-normal;
+  }
+}
+
+//************* estilos de cards **********+//
+.contenedor_grande {
+  background-image: linear-gradient(to bottom, grey, white);
+  margin-top: 0;
+  padding: 1px;
+  .contenedor_imagen {
+    transition: 0.5s ease-in-out;
+    height: 220px;
+    width: 100%;
+    img {
+      height: 100%;
+    }
+  }
+  .contenedor_imagen:hover {
+    filter: brightness(80%);
+  }
+  .card-body {
+    background-color: $color-bkg-primario;
+    transition: 0.5s ease-in-out;
+    .card__title {
+      font-weight: 700;
+      font-size: $fuente-normal;
+      color: $text-color;
+    }
+    .card__text {
+      color: $text-color-alt;
+      font-size: $fuente-normal * 0.9;
+    }
+  }
+  .card-body:hover {
+    filter: brightness(80%);
+  }
+}
+//*******estilos del footer **********
+.estilo-footer {
+  background-color: $dark-color;
+  color: $text-color-alt2;
+  .footer__text {
+    text-align: justify;
+  }
+}

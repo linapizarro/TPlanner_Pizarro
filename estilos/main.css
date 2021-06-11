@@ -1,0 +1,88 @@
+.container-fluid .logo {
+  height: 4em;
+  width: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #282d31;
+  opacity: 0.3;
+}
+
+.carousel-caption {
+  bottom: 30px;
+}
+
+.carousel-caption h5 {
+  font-size: 2em;
+}
+
+.carousel-caption p {
+  font-size: 1em;
+}
+
+.contenedor_grande {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(grey), to(white));
+  background-image: linear-gradient(to bottom, grey, white);
+  margin-top: 0;
+  padding: 1px;
+}
+
+.contenedor_grande .contenedor_imagen {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  height: 220px;
+  width: 100%;
+}
+
+.contenedor_grande .contenedor_imagen img {
+  height: 100%;
+}
+
+.contenedor_grande .contenedor_imagen:hover {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+.contenedor_grande .card-body {
+  background-color: #c9bfbfdc;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.contenedor_grande .card-body .card__title {
+  font-weight: 700;
+  font-size: 1em;
+  color: #282d31;
+}
+
+.contenedor_grande .card-body .card__text {
+  color: #53575a;
+  font-size: 0.9em;
+}
+
+.contenedor_grande .card-body:hover {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+.estilo-footer {
+  background-color: #282d31;
+  color: #808080;
+}
+
+.estilo-footer .footer__text {
+  text-align: justify;
+}

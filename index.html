@@ -15,7 +15,11 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./estilos/style.css" />
+    <script
+      src="https://kit.fontawesome.com/c441bf4713.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./estilos/main.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
@@ -66,7 +70,7 @@
         </div>
       </nav>
     </header>
-    <!-- carousel -->
+    <!-- comienza carousel -->
     <div
       id="carouselExampleCaptions"
       class="carousel slide"
@@ -127,6 +131,9 @@
           <div class="carousel-caption d-none d-md-block">
             <h5>Actual</h5>
             <p>Actualizate siempre con los mejores recursos</p>
+            <div>
+              <button type="button" class="btn btn-primary">Contacto</button>
+            </div>
           </div>
         </div>
       </div>
@@ -149,7 +156,8 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <!-- cards -->
+    <!-- fin de carousel -->
+    <!-- inicio cards -->
     <div class="contenedor_grande">
       <div class="row mt-5">
         <div class="col-12 col-lg-4">
@@ -162,8 +170,8 @@
               />
             </div>
             <div class="card-body">
-              <h5 class="card-title">Fácil de usar</h5>
-              <p class="card-text">
+              <h5 class="card__title">Fácil de usar</h5>
+              <p class="card__text">
                 Una herramienta simple de usar que permite la gestión de tus
                 clases.
               </p>
@@ -180,8 +188,8 @@
               />
             </div>
             <div class="card-body">
-              <h5 class="card-title">Simplifica tu dia</h5>
-              <p class="card-text">
+              <h5 class="card__title">Simplifica tu dia</h5>
+              <p class="card__text">
                 Simplifica tu día en las escuelas, llevando con vos todo lo que
                 necesitas.
               </p>
@@ -198,8 +206,8 @@
               />
             </div>
             <div class="card-body">
-              <h5 class="card-title">Muchas funciones</h5>
-              <p class="card-text">
+              <h5 class="card__title">Muchas funciones</h5>
+              <p class="card__text">
                 Muchas funciones que podes usar desde el celular o notebook.
                 Todas las funciones siempre con vos.
               </p>
@@ -207,56 +215,80 @@
           </div>
         </div>
       </div>
-
-      <!-- <div class="container">
-      <div class="row mt-5">
-        <div class="col-12 col-lg-4">
-          <div class="contenedor_imagen">
-            <img class=card_imagen  src="img/facil.jpg" alt="facil de usar">
-          </div>
-          <div class="contenedor_texto">
-            <p class="card__titulo">Fácil de usar</p>
-            <div class="card_info">
-              <p>Una herramienta simple de usar que permite la gestión de tus
-                clases.</p>
-              </div>    
-            </div>
-            
-          </div>
-          <div class="col-12 col-lg-4">
-            <div class="contenedor_imagen">
-              <img class=card_imagen  src="img/simplifica.png" alt="simplifica tu dia">
-            </div>
-            <div class="contenedor_texto">
-              <p class="card__titulo">Simplifica tu día</p>
-              <div class="card_info">
-                <p>Simplifica tu día en las escuelas, llevando con vos todo lo
-                  que necesitas.</p>
-                </div>    
-              </div>
-              
-            </div><div class="col-12 col-lg-4">
-              <div class="contenedor_imagen">
-                <img class=card_imagen  src="img/funciones útiles.jpg" alt="funciones utiles">
-              </div>
-              <div class="contenedor_texto">
-                <p class="card__titulo">Muchas funciones</p>
-                <div class="card_info">
-                  <p>Muchas funciones que podes usar desde la tablet, celular o
-                    notebook.</p>
-                  </div>    
-                </div>
-                
-              </div>
-              
-            </div>
-            
-          </div> -->
     </div>
 
-    <footer class="footer">
-      <p>logo y contactos. Creado por LP - 2021</p>
+    <!-- Footer -->
+    <footer class="estilo-footer text-center">
+      <!-- Footer Links -->
+      <div class="container-fluid text-md-left">
+        <div class="row">
+          <div class="col-md-4 mt-md-0 mt-3 mb-3">
+            <!-- Content -->
+            <h5 class="text-uppercase">Planificador Docente</h5>
+            <p class="footer__text">
+              Una herramienta creada para simplicar la tarea diaria docente.
+              Pensanda para planificar y llevar las calificaciones de una forma
+              rápida y fácil.
+            </p>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">redes sociales</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a target="_blank" href="#" class="btn-social btn-outline"
+                  ><i class="fa fa-fw fa-facebook"></i
+                ></a>
+                Seguinos en facebook
+              </li>
+
+              <li>
+                <a target="_blank" href="#" class="btn-social btn-outline"
+                  ><i class="fa fa-fw fa-google-plus"></i
+                ></a>
+                Seguinos en Google Plus
+              </li>
+              <li>
+                <a target="_blank" href="#" class="btn-social btn-outline"
+                  ><i class="fa fa-fw fa-twitter"></i
+                ></a>
+                Seguinos en Twitter
+              </li>
+              <li>
+                <a target="_blank" href="#" class="btn-social btn-outline"
+                  ><i class="fa fa-fw fa-linkedin"></i
+                ></a>
+                Seguinos en Instagram
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <h5 class="text-uppercase">información de contacto</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a target="_blank" href="#" class="btn-social btn-outline"
+                  ><i class="fa fa-envelope-open-o"></i
+                ></a>
+                prueba@prueba.gmail.com
+              </li>
+
+              <li>
+                <a target="_blank" href="#" class="btn-social btn-outline"
+                  ><i class="fa fa-phone"></i
+                ></a>
+                236-4690000
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+
+      <div class="footer-copyright text-center py-3">© 2021 LP</div>
     </footer>
+    <!-- fin de Footer -->
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
