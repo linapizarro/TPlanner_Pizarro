@@ -1,3 +1,4 @@
+//:: :: :: :: Inicio VARIABLES :: :: :: :: //
 $fuente-normal: 1em;
 $color-bkg-primario: #c9bfbfdc; //fondo de form primario
 $color-bkg-secundario: rgb(180, 160, 160); // fondo de form secundario
@@ -18,6 +19,8 @@ $text-color: #282d31;
 $text-color-alt: #53575a;
 $text-color-alt2: #808080;
 $body-bkg: #fcfcfc;
+
+//:: :: :: :: Fin VARIABLES :: :: :: :: //
 
 //*********estilos del header
 
@@ -52,44 +55,82 @@ $body-bkg: #fcfcfc;
   }
 }
 
-//************* estilos de cards **********+//
-.contenedor_grande {
+//************* estilos de cards GENERAL **********+//
+.card-estilo {
+  background-color: $color-bkg-primario;
+  color: $text-color;
+  font-size: $fuente-normal;
+}
+
+//************* estilos de cards del INDEX**********+//
+.contenedor-card {
   background-image: linear-gradient(to bottom, grey, white);
   margin-top: 0;
   padding: 1px;
-  .contenedor_imagen {
+
+  .card {
+    @extend .card-estilo;
+  }
+  &__imagen {
     transition: 0.5s ease-in-out;
-    height: 220px;
+    height: 160px;
     width: 100%;
     img {
       height: 100%;
     }
   }
-  .contenedor_imagen:hover {
+  &__imagen:hover {
     filter: brightness(80%);
   }
-  .card-body {
-    background-color: $color-bkg-primario;
+  &__text {
     transition: 0.5s ease-in-out;
+    margin: 7px;
+    height: 100px;
     .card__title {
       font-weight: 700;
-      font-size: $fuente-normal;
-      color: $text-color;
+      @extend .card-estilo;
     }
     .card__text {
-      color: $text-color-alt;
+      @extend .card-estilo;
       font-size: $fuente-normal * 0.9;
     }
   }
-  .card-body:hover {
+  &__text:hover {
     filter: brightness(80%);
   }
 }
 //*******estilos del footer **********
+@mixin background-and-size($background, $size) {
+  background-color: $background;
+  font-size: $size;
+}
+
 .estilo-footer {
+  h5 {
+    font-size: $fuente-normal;
+  }
   background-color: $dark-color;
   color: $text-color-alt2;
+  font-size: $fuente-normal * 0.7;
+
   .footer__text {
     text-align: justify;
+  }
+  .pruebomixin {
+    @include background-and-size($second-color, $fuente-normal * 1.3);
+  }
+}
+
+//:: :: :: PANTALLAS desde 768 PX :: :: :://
+@media (min-width: 768px) {
+  .estilo-footer {
+    h5 {
+      font-size: $fuente-normal;
+    }
+    font-size: $fuente-normal * 0.8;
+
+    .pruebomixin {
+      @include background-and-size($second-color, $fuente-normal * 1.5);
+    }
   }
 }
