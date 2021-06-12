@@ -19,7 +19,8 @@
       src="https://kit.fontawesome.com/c441bf4713.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./estilos/style.css" />
+    <link rel="stylesheet" href="./estilos/main.css" />
+    <!-- <link rel="stylesheet" href="estilos/style.css" /> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
@@ -30,7 +31,7 @@
   <body>
     <!-- header -->
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <nav class="nav-estilo navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -70,141 +71,214 @@
         </div>
       </nav>
     </header>
-
-    <main>
-      <div class="contenedor">
-        <h1 class="titulo">Preguntas frecuentes</h1>
-        <div class="categorias">
-          <div class="categoria__ingreso">
+    <!-- fin del header -->
+    <!-- comienza cajitas -->
+    <div class="ayuda_titulo"><p>Preguntas frecuentes</p></div>
+    <div class="container mb-5">
+      <div class="row g-2">
+        <div class="col-6">
+          <div class="ayuda__box">
             <i class="fas fa-sign-in-alt"></i>
             <p>Ingreso</p>
           </div>
-          <div class="categoria__planificador">
+        </div>
+        <div class="col-6">
+          <div class="ayuda__box">
             <i class="fas fa-book-reader"></i>
             <p>Planificador</p>
           </div>
-          <div class="categoria__recursos">
+        </div>
+        <div class="col-6">
+          <div class="ayuda__box">
             <i class="fas fa-sticky-note"></i>
             <p>Recursos</p>
           </div>
-          <div class="categoria__asistencia">
-            <i class="fas fa-clipboard-list"></i>
-            <p>Asistencia y Calificaciones</p>
-          </div>
         </div>
-
-        <div class="preguntas">
-          <div class="contenedor-preguntas__ingreso">
-            <div class="contenedor-pregunta">
-              <p class="pregunta">
-                ¿Cómo me registro? <i class="fas fa-sign-in-alt"></i>
-              </p>
-              <p class="respuesta">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-                error alias ab consectetur! Eum a ipsa aspernatur, distinctio
-                quos numquam id odit vitae tempora! Adipisci.
-              </p>
-            </div>
-            <div class="contenedor-pregunta">
-              <p class="pregunta">
-                ¿Cómo inicio sesión? <i class="fas fa-sign-in-alt"></i>
-              </p>
-              <p class="respuesta">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-                error alias ab consectetur! Eum a ipsa aspernatur, distinctio
-                quos numquam id odit vitae tempora! Adipisci.
-              </p>
-            </div>
-          </div>
-          <div class="contenedor-preguntas__planificador">
-            <div class="contenedor-pregunta">
-              <p class="pregunta">
-                ¿Cómo crear una nueva planificación?
-                <i class="fas fa-book-reader"></i>
-              </p>
-              <p class="respuesta">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-                error alias ab consectetur! Eum a ipsa aspernatur, distinctio
-                quos numquam id odit vitae tempora! Adipisci.
-              </p>
-            </div>
-            <div class="contenedor-pregunta">
-              <p class="pregunta">
-                ¿Cómo agregar un archivo a la planificación?
-                <i class="fas fa-book-reader"></i>
-              </p>
-              <p class="respuesta">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-                error alias ab consectetur! Eum a ipsa aspernatur, distinctio
-                quos numquam id odit vitae tempora! Adipisci.
-              </p>
-            </div>
-          </div>
-          <div class="contenedor-preguntas__recursos">
-            <div class="contenedor-pregunta">
-              <p class="pregunta">
-                ¿Cómo consultar recursos?
-                <i class="fas fa-sticky-note"></i>
-              </p>
-              <p class="respuesta">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-                error alias ab consectetur! Eum a ipsa aspernatur, distinctio
-                quos numquam id odit vitae tempora! Adipisci.
-              </p>
-            </div>
-            <div class="contenedor-pregunta">
-              <p class="pregunta">
-                ¿Cómo crear notas?
-                <i class="fas fa-sticky-note"></i>
-              </p>
-              <p class="respuesta">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-                error alias ab consectetur! Eum a ipsa aspernatur, distinctio
-                quos numquam id odit vitae tempora! Adipisci.
-              </p>
-            </div>
-            <div class="contenedor-pregunta">
-              <p class="pregunta">
-                ¿Cómo crear rúbricas?
-                <i class="fas fa-sticky-note"></i>
-              </p>
-              <p class="respuesta">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-                error alias ab consectetur! Eum a ipsa aspernatur, distinctio
-                quos numquam id odit vitae tempora! Adipisci.
-              </p>
-            </div>
-          </div>
-          <div class="contenedor-preguntas__asistencia">
-            <div class="contenedor-pregunta">
-              <p class="pregunta">
-                ¿Cómo crear lista de estudiantes?
-                <i class="fas fa-clipboard-list"></i>
-              </p>
-              <p class="respuesta">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-                error alias ab consectetur! Eum a ipsa aspernatur, distinctio
-                quos numquam id odit vitae tempora! Adipisci.
-              </p>
-            </div>
-            <div class="contenedor-pregunta">
-              <p class="pregunta">
-                ¿Cómo ingresar calificaciones y obtener promedios?
-                <i class="fas fa-clipboard-list"></i>
-              </p>
-              <p class="respuesta">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-                error alias ab consectetur! Eum a ipsa aspernatur, distinctio
-                quos numquam id odit vitae tempora! Adipisci.
-              </p>
-            </div>
+        <div class="col-6">
+          <div class="ayuda__box">
+            <i class="fas fa-clipboard-list"></i>
+            <p>Calificaciones</p>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+    <!-- fin de cajitas -->
+    <!-- comienza preg y respuesta -->
+    <div class="container">
+      <div class="row mb-2">
+        <div class="col mb-2">
+          <p class="pregunta">
+            ¿Cómo me registro? <i class="fas fa-sign-in-alt"></i>
+          </p>
+          <p class="respuesta">
+            Pulsá en el botón ingresá por primer vez e ingresá tus datos
+          </p>
+        </div>
+      </div>
 
-    <footer>
-      <p>logo y contactos. Creado por LP - 2021</p>
+      <div class="row mb-2">
+        <div class="col mb-2">
+          <p class="pregunta">
+            ¿Cómo inicio sesión? <i class="fas fa-sign-in-alt"></i>
+          </p>
+          <p class="respuesta">Pulsá en el botón ingresá</p>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col mb-2">
+          <p class="pregunta">
+            ¿Cómo crear una nueva planificación?
+            <i class="fas fa-book-reader"></i>
+          </p>
+          <p class="respuesta">
+            Pulsá sobre el botón planificar e ingresá la planificación.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col mb-2">
+          <p class="pregunta">
+            ¿¿Cómo agregar un archivo a la planificación?
+            <i class="fas fa-book-reader"></i>
+          </p>
+          <p class="respuesta">
+            Pulsá en el boton agregar archivo y subí tu archivo.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col mb-2">
+          <p class="pregunta">
+            ¿Cómo consultar recursos? <i class="fas fa-sticky-note"></i>
+          </p>
+          <p class="respuesta">
+            Ingresá al menú Recursos y presioná sobre el icono de la lupa
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col mb-2">
+          <p class="pregunta">
+            ¿Cómo crear notas? <i class="fas fa-sticky-note"></i>
+          </p>
+          <p class="respuesta">
+            Ingresá al menú recursos y pulsá sobre el ícono de notas
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col mb-2">
+          <p class="pregunta">
+            ¿Cómo crear lista de estudiantes?
+            <i class="fas fa-clipboard-list"></i>
+          </p>
+          <p class="respuesta">
+            Ingresá al menú asistencia y pulsá sobre el ícono crear nuevo
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col mb-2">
+          <p class="pregunta">
+            ¿Cómo ingresar calificaciones y obtener promedios?
+            <i class="fas fa-clipboard-list"></i>
+          </p>
+          <p class="respuesta">
+            Ingresá al menú asistencia y pulsá sobre el ícono Calificaciones
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- fin de preg y respuestas -->
+    <!-- Footer -->
+    <footer class="estilo-footer text-center">
+      <!-- Footer Links -->
+      <div class="container-fluid text-md-left">
+        <div class="row">
+          <div class="col-md-4 mt-md-0 mt-3 mb-3">
+            <!-- Content -->
+            <h5 class="text-uppercase">Planificador Docente</h5>
+            <p class="footer__text">
+              Una herramienta creada para simplicar la tarea diaria docente.
+              Pensanda para planificar y llevar las calificaciones de una forma
+              rápida y fácil.
+            </p>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">redes sociales</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a target="_blank" href="#" class="btn-social btn-outline"
+                  ><i class="fa fa-fw fa-facebook"></i
+                ></a>
+                Seguinos en Facebook
+              </li>
+
+              <li>
+                <a target="_blank" href="#" class="btn-social btn-outline"
+                  ><i class="fa fa-fw fa-google-plus"></i
+                ></a>
+                Seguinos en Google Plus
+              </li>
+              <li>
+                <a target="_blank" href="#" class="btn-social btn-outline"
+                  ><i class="fa fa-fw fa-twitter"></i
+                ></a>
+                Seguinos en Twitter
+              </li>
+              <li>
+                <a target="_blank" href="#" class="btn-social btn-outline"
+                  ><i class="fa fa-fw fa-linkedin"></i
+                ></a>
+                Seguinos en Linkedin
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <h5 class="text-uppercase">información de contacto</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a target="_blank" href="#" class="btn-social btn-outline"
+                  ><i class="fa fa-envelope-open-o"></i
+                ></a>
+                prueba@prueba.gmail.com
+              </li>
+
+              <li>
+                <a target="_blank" href="#" class="btn-social btn-outline"
+                  ><i class="fa fa-phone"></i
+                ></a>
+                236-4690000
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="pruebomixin footer-copyright text-center py-3">© 2021 LP</div>
     </footer>
+    <!-- fin de Footer -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

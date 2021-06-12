@@ -147,57 +147,6 @@ footer {
   font-style: italic;
 } */
 
-/* ESTILOS DE FUNCIONALIDADES.HTML */
-.section2 {
-  display: grid;
-  grid-gap: 40px;
-  grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
-  padding: 60px 0;
-  background-image: linear-gradient(to bottom, grey, white);
-}
-
-.tarjetas {
-  grid-column: 2 / span 12;
-  display: grid;
-  grid-template-columns: repeat(12, minmax(auto, 60px));
-  grid-gap: 40px;
-}
-.cardgrid {
-  grid-column-end: span 4;
-  display: flex;
-  flex-direction: column;
-  background: lightpink;
-  cursor: pointer;
-  /* transition: all 0.3s ease 0s; */
-}
-
-.cardgrid__image-container {
-  width: 100%;
-  padding-top: 56.25%;
-  overflow: hidden;
-  position: relative;
-}
-
-.cardgrid__image-container img {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.cardgrid__content {
-  padding: 20px;
-}
-
-.cardgrid__titulo {
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-.cardgrid__info {
-  display: flex;
-}
 /* ESTILOS DE CONTACTO-HTML */
 .contenedor {
   max-width: 1170px;
@@ -343,36 +292,6 @@ footer {
 /* .ingreso__crearcuenta */
 
 /* ESTILOS DE AYUDA.HTML */
-.categorias {
-  width: 280px;
-  display: grid;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 69px;
-  margin-top: 35px;
-}
-
-.categoria__ingreso,
-.categoria__planificador,
-.categoria__recursos,
-.categoria__asistencia {
-  background: #c9bfbfdc;
-  box-shadow: 0 0 20px 0 rgba(184, 150, 150, 0.3);
-  cursor: pointer;
-  text-align: center;
-  padding: 5px;
-  border-radius: 10px;
-  font-weight: 700;
-  border: 1px solid transparent;
-  transition: 0.3s ease all;
-}
-
-.categoria__ingreso:hover,
-.categoria__planificador:hover,
-.categoria__recursos:hover,
-.categoria__asistencia:hover {
-  box-shadow: 0 0 20px 0 rgba(204, 25, 25, 0.3);
-}
 
 /* CONTENEDOR PREGUNTAS INGRESO */
 
@@ -393,20 +312,6 @@ footer {
 }
 
 /* CONTENEDOR PREGUNTAS Y RESPUESTAS */
-.pregunta {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.respuesta {
-  color: #808080;
-  line-height: 30px;
-  margin-top: 5px;
-}
 
 /* PANTALLAS GRANDES PARA CONTACTO e INGRESO*/
 /* @media (min-width: 768px) { */
