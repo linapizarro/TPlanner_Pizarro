@@ -8,7 +8,7 @@ $first-color: #007bdf;
 $first-color-alt: #006dc6;
 $second-color: #00cbff;
 $second-color-alt: #00bff0;
-$third-color: #ff3c32;
+$third-color: #ff32dd;
 $third-color-alt: #ff2419;
 $accent-color: #fba905;
 $accent-color-alt: #f1a000;
@@ -54,7 +54,7 @@ body {
 //:: :: :: :: estilo de banner :: :: :: //
 .text-header {
   min-height: 100vh;
-  color: $dark-color-alt;
+  color: $text-color-blanco;
   font-family: "Montserrat";
   h2 {
     font-family: "Anton";
@@ -92,6 +92,7 @@ body {
     height: 160px;
     width: 100%;
     img {
+      object-fit: cover;
       height: 100%;
     }
   }
@@ -134,15 +135,13 @@ body {
 }
 //:: :: :: ESTILO DE AYUDA.HTML :: :: :://
 .ayuda_titulo,
-.contacto_titulo,
 .ingreso_titulo {
   font-size: $fuente-normal * 2;
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
-.ayuda__box,
-.contacto__box {
+.ayuda__box {
   background: $color-bkg-primario;
   box-shadow: 0 0 20px 0 rgba(184, 150, 150, 0.3);
   text-align: center;
@@ -167,37 +166,43 @@ body {
 }
 
 // --------- ESTILO CONTACTO HTML -------------//
-.contacto__box {
-  background: $color-bkg-primario;
-  box-shadow: 0 0 20px 0 rgba(184, 150, 150, 0.3);
+.contacto__header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/1.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $text-color-blanco;
+}
+
+.contacto__contenedor {
+  display: flex;
+  justify-content: center;
+  .contenedor__formulario {
+    background-image: url(../img/1.jpg);
+    position: relative;
+  }
+  .contenedor__formulario::before {
+    border-radius: 10px;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
 }
 
 .contacto__box {
-  background: $color-bkg-primario;
-  box-shadow: 0 0 20px 0 rgba(184, 150, 150, 0.3);
   text-align: center;
-
-  padding: 5px;
-  border-radius: 10px;
-  font-weight: 700;
-}
-.contacto__info {
-  background-color: rgb(180, 160, 160);
-}
-
-.contacto__info h4,
-.contacto__info ul,
-.contacto__info p {
-  text-align: center;
-  margin: 0 0 1rem 0;
-}
-
-.contacto__info ul {
-  list-style: none;
-}
-
-.contacto__info ul li {
-  padding: 0.3em;
+  padding: 20px;
+  border-radius: 15px;
+  color: $text-color-blanco;
 }
 
 //estilos de ingresa------//
@@ -275,4 +280,9 @@ body {
   // display: flex;
   // flex-direction: column;
   //}
+}
+@media (max-width: 538px) {
+  .text-header {
+    color: $dark-color-alt;
+  }
 }

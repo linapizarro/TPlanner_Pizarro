@@ -31,7 +31,7 @@ body {
 
 .text-header {
   min-height: 100vh;
-  color: #141618;
+  color: #fcfcfc;
   font-family: "Montserrat";
 }
 
@@ -72,6 +72,8 @@ body {
 }
 
 .contenedor-card__imagen img {
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
 }
 
@@ -113,7 +115,6 @@ body {
 }
 
 .ayuda_titulo,
-.contacto_titulo,
 .ingreso_titulo {
   font-size: 2em;
   display: -webkit-box;
@@ -125,8 +126,7 @@ body {
   margin-bottom: 10px;
 }
 
-.ayuda__box,
-.contacto__box {
+.ayuda__box {
   background: #c9bfbfdc;
   -webkit-box-shadow: 0 0 20px 0 rgba(184, 150, 150, 0.3);
           box-shadow: 0 0 20px 0 rgba(184, 150, 150, 0.3);
@@ -152,39 +152,49 @@ body {
   line-height: 30px;
 }
 
-.contacto__box {
-  background: #c9bfbfdc;
-  -webkit-box-shadow: 0 0 20px 0 rgba(184, 150, 150, 0.3);
-          box-shadow: 0 0 20px 0 rgba(184, 150, 150, 0.3);
+.contacto__header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/1.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fcfcfc;
 }
 
-.contacto__box {
-  background: #c9bfbfdc;
-  -webkit-box-shadow: 0 0 20px 0 rgba(184, 150, 150, 0.3);
-          box-shadow: 0 0 20px 0 rgba(184, 150, 150, 0.3);
-  text-align: center;
-  padding: 5px;
+.contacto__contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacto__contenedor .contenedor__formulario {
+  background-image: url(../img/1.jpg);
+  position: relative;
+}
+
+.contacto__contenedor .contenedor__formulario::before {
   border-radius: 10px;
-  font-weight: 700;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
 }
 
-.contacto__info {
-  background-color: #b4a0a0;
-}
-
-.contacto__info h4,
-.contacto__info ul,
-.contacto__info p {
+.contacto__box {
   text-align: center;
-  margin: 0 0 1rem 0;
-}
-
-.contacto__info ul {
-  list-style: none;
-}
-
-.contacto__info ul li {
-  padding: 0.3em;
+  padding: 20px;
+  border-radius: 15px;
+  color: #fcfcfc;
 }
 
 .ingreso__recuadro {
@@ -273,5 +283,11 @@ body {
   .estilo-footer .pruebomixin {
     background-color: #00cbff;
     font-size: 1.5em;
+  }
+}
+
+@media (max-width: 538px) {
+  .text-header {
+    color: #141618;
   }
 }

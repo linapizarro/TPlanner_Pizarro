@@ -37,9 +37,10 @@
   </head>
   <body>
     <!-- <header> -->
-    <header>
+    <header class="contacto__header">
       <nav class="nav-estilo navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
+          <img class="img-fluid logo" src="./img/logo.png" alt="logo" />
           <button
             class="navbar-toggler"
             type="button"
@@ -73,52 +74,62 @@
                 <a class="nav-link" href="ingreso.html">Ingresá</a>
               </li>
             </ul>
-            <img class="img-fluid logo" src="./img/logo.png" alt="logo" />
           </div>
         </div>
       </nav>
+      <!-- inicio formulario de contacto -->
+      <h1 class="contacto__titulo d-flex justify-content-center mt-5 mb-1">
+        Contacto
+      </h1>
+      <div class="contacto__contenedor">
+        <div class="contenedor__formulario mt-5 mb-5">
+          <div class="contacto__box">
+            <h4>Completá el formulario para conocer más</h4>
+            <form action="#">
+              <p>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="nombre"
+                  placeholder="Nombre y apellido"
+                />
+              </p>
+              <p>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="e_mail"
+                  placeholder="E-mail"
+                />
+              </p>
+              <p>
+                <input
+                  type="tel"
+                  class="form-control"
+                  name="tel"
+                  placeholder="Teléfono"
+                />
+              </p>
+              <p class="block">
+                <textarea
+                  name="mensaje"
+                  class="form-control"
+                  rows="4"
+                  placeholder="Mensaje"
+                ></textarea>
+              </p>
+
+              <!-- Boton enviar y boton Retur -->
+
+              <p>
+                <button type="submit">Enviar</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- fin del header -->
-    <div class="container">
-      <h1 class="contacto_titulo">Contactate</h1>
-      <div class="contacto__box">
-        <h3>Escribinos tu consulta</h3>
-        <form action="#">
-          <p>
-            <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" name="nombre" />
-          </p>
-          <p>
-            <label for="e_mail">E-mail</label>
-            <input type="email" class="form-control" name="e_mail" />
-          </p>
-          <p>
-            <label for="tel">Teléfono</label>
-            <input type="tel" class="form-control" name="tel" />
-          </p>
-          <p class="block">
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" rows="4"></textarea>
-          </p>
-
-          <!-- Boton enviar y boton Retur -->
-
-          <p>
-            <button type="submit">Enviar</button>
-          </p>
-        </form>
-      </div>
-
-      <div class="contacto__info">
-        <h4>Más información</h4>
-        <ul>
-          <li><i class="fas fa-map-marker-alt"></i> Calle 8 y 13 s/n</li>
-          <li><i class="fab fa-whatsapp"></i> 236 4690000</li>
-          <li><i class="fas fa-at"></i> prueba@prueba.com</li>
-        </ul>
-        <p>Hacenos saber tu duda y pronto te contactaremos.</p>
-      </div>
-    </div>
 
     <!-- Footer -->
     <footer class="estilo-footer text-center">
